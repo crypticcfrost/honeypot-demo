@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.node-unauthorized-flash {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% { background-color: red; }
+  50% { background-color: white; }
+  100% { background-color: red; }
+}
+
+@keyframes pulse {
+  0% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.5;
+  }
+  100% {
+    stroke-opacity: 1;
+  }
+}
+
+.node-failure-flash {
+  animation: orange-pulse 1s infinite;
+}
+
+@keyframes orange-pulse {
+  0% {
+    box-shadow: 0 0 5px 2px orange;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px orange;
+  }
+  100% {
+    box-shadow: 0 0 5px 2px orange;
+  }
+}
+
+@keyframes red-pulse {
+  0% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.5;
+  }
+  100% {
+    stroke-opacity: 1;
+  }
+}
+
+.node-unauthorized-flash {
+  animation: unauthorized-pulse 1s infinite;
+}
+
+@keyframes unauthorized-pulse {
+  0% {
+    box-shadow: 0 0 5px 2px red;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px red;
+  }
+  100% {
+    box-shadow: 0 0 5px 2px red;
+  }
+}
+
+@keyframes flash-attack {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(2);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  }
+}
+
+.flash-attack {
+  animation: flash-attack 0.5s ease-in-out infinite;
+}
+
+/* Node styles */
+.node-server {
+  background-color: #4CAF50 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  padding: 10px !important;
+  color: white !important;
+}
+
+.node-honeypot {
+  background-color: #2196F3 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  padding: 10px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.node-honeypot-gen2 {
+  background-color: #9C27B0 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  padding: 10px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.node-honeypot-gen3 {
+  background-color: #FF9800 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  padding: 10px !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
