@@ -1,59 +1,58 @@
-# SCADA Network Administration Visualization
-SCADA Network Administration Visualization project is an advanced, interactive network monitoring and management tool built with modern web technologies. It provides administrators with a real-time, visually intuitive interface to oversee the critical infrastructure of SCADA (Supervisory Control and Data Acquisition) systems.
+# Dynamic Cloud-Based Honeypot System
+The Dynamic Cloud-Based Honeypot System is an intelligent, scalable cybersecurity solution designed to lure, detect, and analyze malicious activity in real-time. Built with modern cloud technologies, it empowers security teams with deep insights into attack patterns while proactively strengthening the defenses of critical systems.
 
 # Key Features:
-1. Dynamic ReactFlow Canvas:
+1. Dynamic Honeypot Deployment:
 
-- A responsive and interactive visualization of network topology using ReactFlow.
-- Nodes and edges represent routers, switches, endpoints, and data links, enriched with real-time statuses and animations.
+- Instantly spin up realistic decoy systems across cloud environments.
+- Supports various honeypot types (web servers, databases, SSH endpoints) to attract diverse threat actors.
+- Automated retirement and respawn of honeypots based on detected attack intensity.
 
-2. Simulated Network Behavior:
+2. Real-Time Attack Logging and Analysis:
 
-- Automatic and manual simulations of key network events like:
-- Data flows visualized with animated edges.
-- Unauthorized device detection with alert generation.
-- Node/device addition and removal with precise placement.
-- Data transfer failures leading to flashing alerts and frozen pipelines.
+- Capture detailed metadata on every intrusion attempt, including IP addresses, payloads, attack vectors, and timestamps.
+- Aggregate logs for centralized analysis, providing rich datasets for threat intelligence.
 
-3. Real-Time Alerts and Logs:
+3. Automated Adaptive Defense:
 
-- Alerts for critical incidents such as unauthorized devices and data failures.
-- Comprehensive logs to track network changes, offering administrators full transparency.
+- Monitor honeypot traffic in real-time.
+- Dynamically decommission compromised honeypots and deploy fresh instances to maintain deception integrity without manual intervention.
+- Adjust honeypot configurations based on attack trends to continuously improve coverage.
 
-4. Pipeline Freeze Simulation:
+4. Proactive Threat Intelligence:
 
-- A realistic emulation of network failure scenarios where operations are paused until resolved, highlighting the urgency of critical failures.
+- Build a live attack map showcasing sources and types of ongoing threats.
+- Leverage collected data to inform security hardening of production environments.
 
 5. Interactive Admin Controls:
 
 - One-click simulations for data flows, failures, and unauthorized access scenarios.
 - Real-time addition and removal of SCADA endpoints with geolocation integration.
 
-6. Engaging User Experience:
+6. Seamless Cloud Integration:
 
-- Framer Motion-powered animations for smooth transitions.
-- Realistic logging out animation, reflecting high attention to user-centric design.
+- Cloud-native design with support for major providers (AWS, Azure, GCP).
+- Auto-scaling and region-specific honeypot deployment options.
 
-7. Error Resilience:
-
-- Safeguards against removing essential SCADA endpoints, ensuring network integrity.
-- Clear feedback mechanisms with toast notifications for every action.
 
 # Technology Stack:
 
-- **React.js:** For a dynamic and responsive user interface.
-- **ReactFlow:** For visually stunning, interactive network graphs.
-- **Framer Motion:** For sleek animations that enhance the user experience.
-- **React-Toastify:** For real-time notifications.
-- **Next UI + Tailwind CSS:** To achieve a clean, modular design.
+- **React.js + Next.js:** For a dynamic, highly responsive admin interface.
+- **Node.js + Express:** For backend orchestration and API endpoints.
+- **Docker + Kubernetes:** For containerized honeypot deployment and scaling.
+- **AWS/GCP/Azure SDKs:** For seamless cloud resource management.
+- **ElasticSearch + Kibana:** For powerful attack log indexing, visualization, and analysis.
+- **Tailwind CSS + Next UI:** To deliver a clean, modular, and accessible design system.
+- **Socket.IO:** For real-time honeypot status updates and attack alerting.
 
 # Purpose and Applications:
-_This project is designed for network administrators who manage SCADA systems in industries like energy, water, transportation, and manufacturing. It helps:_
+_This project is designed for cybersecurity teams, penetration testers, and cloud administrators aiming to:_
 
-- Visualize complex network topologies at a glance.
-- Simulate and respond to network events to maintain system resilience.
-- Foster proactive monitoring to avoid catastrophic failures.
+- Detect and understand real-world attack behavior before reaching production systems.
+- Proactively strengthen security postures based on empirical data.
+- Establish early-warning systems that adapt dynamically to evolving threats.
 
 # Vision:
 
-The SCADA Network Administration Visualization is more than a tool — it’s a step towards modernizing how we manage critical infrastructure. With its rich feature set and real-time interactivity, it transforms network administration into an efficient, intuitive, and seamless experience.
+The Dynamic Cloud-Based Honeypot System redefines active defense in cybersecurity. By combining real-time threat detection, automated deception tactics, and rich analytics, it not only protects critical infrastructure but also empowers organizations to stay one step ahead of attackers.
+It’s not just a defense tool — it’s a learning system that evolves with every threat encountered.
