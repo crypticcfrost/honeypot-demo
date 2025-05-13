@@ -321,7 +321,7 @@ export default function HoneypotSimulation() {
                 setIsRunning((run) => {
                   const newState = !run;
                   addSystemLog(
-                    newState ? "Simulation started - Monitoring for attacks" : "Simulation stopped - System paused",
+                    newState ? "Honeypots deployed - Monitoring for attacks" : "Honeypots retracted - System paused",
                     newState ? 'success' : 'info'
                   );
                   return newState;
@@ -331,7 +331,7 @@ export default function HoneypotSimulation() {
                 isRunning ? "bg-red-600 hover:bg-red-700" : "bg-green-600 hover:bg-green-700"
               } text-white`}
             >
-              {isRunning ? "Stop Simulation" : "Start Simulation"}
+              {isRunning ? "Disarm System" : "Arm System"}
             </button>
             <button 
               onClick={addHoneypot} 
